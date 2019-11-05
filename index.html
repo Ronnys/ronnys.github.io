@@ -27,7 +27,7 @@
         .swiper-container {
             --swiper-theme-color: #fff; /* 设置Swiper风格 */
             --swiper-navigation-color: #fff; /* 单独设置按钮颜色 */
-            --swiper-navigation-size: 30px; /* 设置按钮大小 */
+            --swiper-navigation-size: 20px; /* 设置按钮大小 */
         }
 
         p {
@@ -72,20 +72,54 @@
 <div class="swiper-container" id="page-content">
     <div class="swiper-wrapper">
         <!-- 第1页  -->
+
+        <div class="swiper-slide page">
+            <div style="width:100vw; height:100vh; text-align: center">
+                <img src="./img/yueyeche_fuwu_title.png" width="48.2%" style="margin-top: 24px">
+                <!--                <div style="background-image: url('./img/img_full_height_with_gap_width.png'); background-size: cover; background-position: center center;"></div>-->
+                <div class="swiper-container banner" style="height: 37.3%; margin-top: 14px">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="text-align: center;">
+                            <img  height="87%" width="100%"
+                                 src="./img/yueye_img_1.png">
+                        </div>
+                        <div class="swiper-slide" style="text-align: center;">
+                            <img height="87%" width="100%"
+                                 src="./img/yueye_img_2.png">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev" style=""></div><!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
+                    <div class="swiper-button-next"></div><!--右箭头。如果放置在swiper-container外面，需要自定义样式。-->
+                </div>
+
+                <img src="./img/yueyeche_fuwu_neirong.png" width="83%" style="margin-top: 40px;">
+            </div>
+        </div>
+
         <div class="swiper-slide page"
              style="background-image: url('./img/p1_img.png'); background-size: cover; background-position: center center">
         </div>
         <!-- 第2页 -->
-        <div class="swiper-slide page" style="text-align: center; ">
-            <div id="player-con" style="height: calc(100% - 145px); width: 100%"></div>
-            <img src="./img/p2_text.png" width="52%" style="margin-top: 32px">
+        <div class="swiper-slide page">
+            <div style=" width:100vw; height:100vh; text-align: center; ">
+                <div id="player-con" style="height: calc(100% - 145px); width: 100%"></div>
+                <img src="./img/p2_text.png" width="52%" style="margin-top: 32px">
+            </div>
         </div>
         
         <div class="swiper-slide page">
-            <div style="width:100vw; height:100vh; padding: 0px 17px;">
+            <div style="width:100vw; height:100vh; padding: 0px 17px; margin-top: 88px">
                 <img src="./img/img_full_height_with_gap_width.png" width="100%">
+<!--                <div style="background-image: url('./img/img_full_height_with_gap_width.png'); background-size: cover; background-position: center center;"></div>-->
             </div>
-<!--            <div style="background-image: url('./img/img_full_height_with_gap_width.png'); height: 100vh; width: calc(100% - 32px); background-size: cover; background-position: center center;"></div>-->
+        </div>
+
+        <div class="swiper-slide page">
+            <div style="width:100vw; height:100vh; padding: 0px 35px; margin-top: 88px">
+                <img src="./img/img_full_2.png" width="100%">
+            </div>
+            <!--            <div style="background-image: url('./img/img_full_height_with_gap_width.png'); height: 100vh; width: calc(100% - 32px); background-size: cover; background-position: center center;"></div>-->
         </div>
 
         <!-- 第3页 -->
