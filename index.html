@@ -86,7 +86,9 @@
 <script type="text/html" id="htmls">
     <div>
         <div class="swiper-slide page">
-            <div class="mould-top-pic" style="background-image: url('img/top1.png')"></div>
+            <div class="mould-top-pic swiper-lazy" style="background-image: url('img/top1.png')">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
             <div class="mould-bottom-text"><img src="img/text1.png"></div>
         </div>
 
@@ -199,6 +201,9 @@
             }()),
         },
         direction : 'vertical',
+        lazy: {
+            loadPrevNext: true,
+        },
         on: {
             slideChangeTransitionEnd: function(){
                 console.log(count,this.activeIndex)
