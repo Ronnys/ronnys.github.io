@@ -9,34 +9,54 @@
     <link href="MyCss.css" rel="stylesheet">
     <style>
 
+        .full-img {width: 100%; height: 100%; background-size: cover; background-position: center center}
+        .margin-top-70px{margin-top: 70px}
         .page-middle-banner{position: relative; height: calc(100% - 400px); max-height: 280px; padding-bottom: 30px}
 
-        .page-3-img{
-            height: 100%; padding: 16px 50px 90px 50px; text-align: center;
-        }
+        .page-3-img{height: 100%; padding: 16px 48px 90px 48px; text-align: center;}
 
         .page-4-title {padding: 30px 0 31px 0; text-align: center}
         .page-4-title img{ height: 54px}
         /*.page-4-img{position: relative; height: calc(100% - 280px); max-height: 300px}*/
         .page-4-img{ text-align: center; position: relative; height: calc(100% - 384px); background: no-repeat center 0px; background-size: cover}
         .page-4-tag {text-align: center;padding-top: 43px}
-        .page-4-tag img{ height: 34px}
+        .page-4-tag img{ height: 36px}
 
         .page-5-title {padding: 30px 0 26px 0; text-align: center}
-        .page-5-title img{ height: 50px}
+        .page-5-title img{ height: 51px}
         .page-5-tag {text-align: center;padding-top: 11.5px}
-        .page-5-tag img{height: 263px}
+        .page-5-tag img{height: 265px}
 
         .page-6-top-pic{ text-align: center; position: relative; height: calc(100% - 352px); background: no-repeat center 0px; background-size: cover}
         .page-6-bottom-text{ text-align: center; padding-top: 36px}
-        .page-6-bottom-text img{ height: 213px}
+        .page-6-bottom-text img{ height: 215px}
 
         .page-9-img{height: 100%; padding: 63px 57px 124px 65px; text-align: center;}
 
         .page-10-title {padding: 24px 0 23px 0; text-align: center}
-        .page-10-title img{ height: 60px}
+        .page-10-title img{ height: 61px}
         .page-10-tag {text-align: center;padding-top: 62.5px}
-        .page-10-tag img{height: 157px}
+        .page-10-tag img{height: 159px}
+
+        .page-11-top-pic{ text-align: center; position: relative; height: calc(100% - 493px); background-size: cover; background-position: center center}
+        .page-11-bottom-text{ text-align: center; padding-top: 27px}
+        .page-11-bottom-text img{ height: 381px}
+
+        .page-12-title {padding: 17px 0 13px 0; text-align: center}
+        .page-12-title img{ height: 65px}
+        .page-12-img{height: calc(100% - 95px); padding: 0px 24px 85px 24px; text-align: center;}
+
+        .page-13-img{height: 100%; margin: 0px 15px 0px 15px; text-align: center; overflow: hidden; background-position: center center; background-size: cover}
+
+        .page-14-img{height: 100%; padding: 97px 24px 85px 24px; text-align: center;}
+
+        .page-18-title {padding: 15px 0 0 0; text-align: center}
+        .page-18-title img{ height: 56px}
+        .page-18-img{height: calc(100% - 70px); padding: 0 25px 67px 24px; text-align: center;}
+
+        .page-19-img{height: calc(100% - 70px); padding: 0 24px 67px 24px; text-align: center;}
+
+        .page-22-img{height: 100%; padding: 12px 25px 85px 24px; text-align: center;}
     </style>
 </head>
 <body style="overflow:hidden">
@@ -51,11 +71,15 @@
 
 <script type="text/html" id="htmls">
     <div>
+
+
+
         <!-- 第1页 -->
         <div class="swiper-slide page">
-            <div style="width: 100%; height: 100%; background-image: url('img/page1/p1_img.png'); background-size: cover; background-position: center center"></div>
+            <div class="full-img swiper-lazy" style="background-image: url('img/page1/p1_img.png'); ">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
         </div>
-
         <!-- 第2页 -->
         <div class="swiper-slide page" >
             <div class="video-module" id="J_prismPlayer1" data-url="http://event.haizitong.com/symfollies/image/Comp1.mp4" style="height: calc(100% - 145px); width: 100%"></div>
@@ -138,6 +162,118 @@
                 <div class="swiper-button-next"></div><!--右箭头。如果放置在swiper-container外面，需要自定义样式。-->
             </div>
             <div class="page-10-tag"><img src="img/page10/p10_text.png"></div>
+        </div>
+        <!-- 第11页 -->
+        <div class="swiper-slide page">
+            <div class="page-11-top-pic swiper-lazy" style="background-image: url('img/page11/p11_img.png')">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="page-11-bottom-text"><img src="img/page11/p11_text.png"></div>
+        </div>
+        <!-- 第12页 -->
+        <div class="swiper-slide page">
+            <div class="page-12-title"><img src="img/page12/p12_top.png"></div>
+            <div class="page-12-img">
+                <img src="img/page12/p12_img.png" class="swiper-lazy inner-full-img">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+        </div>
+        <!-- 第13页 -->
+        <div class="swiper-slide page">
+            <div class="page-13-img swiper-lazy" style="background-image: url('img/page13/p13_img.png')">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+        </div>
+        <!-- 第14页 -->
+        <div class="swiper-slide page">
+            <div class="page-14-img">
+                <img src="img/page14/p14_img.png" class="swiper-lazy inner-full-img">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+        </div>
+
+        <!-- 第15页 -->
+        <div class="swiper-slide page">
+            <div class="page-13-img swiper-lazy" style="background-image: url('img/page15/p15_img.png')">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+        </div>
+        <!-- 第16页 -->
+        <div class="swiper-slide page">
+            <div class="page-14-img">
+                <img src="img/page16/p16_img.png" class="swiper-lazy inner-full-img">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+        </div>
+        <!-- 第17页 -->
+        <div class="swiper-slide page">
+            <div class="page-13-img swiper-lazy" style="background-image: url('img/page17/p17_img.png')">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+        </div>
+        <!-- 第18页 -->
+        <div class="swiper-slide page">
+            <div class="page-18-title"><img src="img/page18/p18_top.png"></div>
+            <div class="page-18-img">
+                <img src="img/page18/p18_img.png" class="swiper-lazy inner-full-img">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+        </div>
+        <!-- 第19页 -->
+        <div class="swiper-slide page">
+            <div class="page-19-img margin-top-70px">
+                <img src="img/page19/p19_img.png" class="swiper-lazy inner-full-img">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+        </div>
+        <!-- 第20页 -->
+        <div class="swiper-slide page">
+            <div class="page-18-img margin-top-70px">
+                <img src="img/page20/p20_img.png" class="swiper-lazy inner-full-img">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+        </div>
+        <!-- 第21页 -->
+        <div class="swiper-slide page">
+            <div class="page-19-img margin-top-70px">
+                <img src="img/page21/p21_img.png" class="swiper-lazy inner-full-img">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+        </div>
+        <!-- 第22页 -->
+        <div class="swiper-slide page">
+            <div class="page-22-img">
+                <img src="img/page22/p22_img.png" class="swiper-lazy inner-full-img">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+        </div>
+        <!-- 第23页 -->
+        <div class="swiper-slide page">
+            <div class="page-22-img">
+                <img src="img/page23/p23_img.png" class="swiper-lazy inner-full-img">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+        </div>
+        <!-- 第24页 -->
+        <div class="swiper-slide page">
+            <div class="page-22-img">
+                <img src="img/page24/p24_img.png" class="swiper-lazy inner-full-img">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+        </div>
+        <!-- 第25页 -->
+        <div class="swiper-slide page">
+            <div class="page-22-img">
+                <img src="img/page25/p25_img.png" class="swiper-lazy inner-full-img">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
+        </div>
+        <!-- 第26页 -->
+        <div class="swiper-slide page">
+            <div class="page-22-img">
+                <img src="img/page26/p26_img.png" class="swiper-lazy inner-full-img">
+                <div class="swiper-lazy-preloader"></div>
+            </div>
         </div>
 
 <!--        <div class="swiper-slide page">-->

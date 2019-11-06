@@ -233,10 +233,10 @@
         virtual: {
             slides: (function () {
                 var slides = [];
-                var htmls=$($("#htmls").html()).clone()
+                var htmls=$($("#htmls").html()).clone();
                 htmls.find('.swiper-slide.page').each(function () {
                     slides.push($(this).html())
-                })
+                });
 
                 return slides;
             }()),
@@ -244,7 +244,7 @@
         direction : 'vertical',
         on: {
             slideChangeTransitionEnd: function(){
-                console.log(count,this.activeIndex)
+                console.log(count,this.activeIndex);
                 if(count==this.activeIndex+1){
                     $(".glyphicon-menu-down").hide()
                 }else {
