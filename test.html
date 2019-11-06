@@ -50,6 +50,40 @@
         .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
             bottom: 10px;
         }
+
+        img{ vertical-align: top}
+        .mould-top-pic{ text-align: center; position: relative; height: calc(100% - 300px); background: no-repeat center 0px; background-size: cover}
+        .mould-bottom-text{ text-align: center; padding-top: 20px}
+        .mould-bottom-text img{ height: 220px}
+
+        .mould-title2{ padding: 20px 0 20px 0; text-align: center}
+        .mould-title2 img{ height: 60px}
+        .mould-bottom-tag2{text-align: center;padding-top: 20px}
+        .mould-bottom-tag2 img{ height: 150px}
+        .mould-banner2{ position: relative;height: calc(100% - 280px); max-height: 300px}
+        .mould-banner2{ padding-bottom: 30px}
+
+        .mould-img3{
+            height: 100%; padding: 0px 20px 160px 20px; text-align: center;
+        }
+        .mould-img3 img{height: 100%; max-width: 100%}
+        .mould-img4{
+            height: 100%; margin: 0px 20px 0px 20px; text-align: center; overflow: hidden; background: no-repeat center 0px; background-size: cover
+        }
+
+        .swiper-button-next, .swiper-button-prev {
+            position: absolute;
+            top: 50%;
+            width: 27px;
+            height: 44px;
+            margin-top: -44px;
+            z-index: 10;
+            cursor: pointer;
+            background-size: 27px 22px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
     </style>
 </head>
 <body style="overflow:hidden">
@@ -64,51 +98,56 @@
 
 <script type="text/html" id="htmls">
     <div>
-        <!-- 第一页    -->
-        <div class="swiper-slide page" >
-            <div class="video-module" id="J_prismPlayer1" data-url="http://event.haizitong.com/symfollies/image/Comp1.mp4" style="height: calc(100% - 145px); width: 100%"></div>
-            <div style="text-align: center;margin-top: 32px"><img src="img/page2/p2_text.png" width="52%" ></div>
+
+        <div class="swiper-slide page">
+            <div style="width: 100%; height: 100%; background-image: url('img/page1/p1_img.png'); background-size: cover; background-position: center center"></div>
         </div>
 
-        <!-- 第一页    -->
         <div class="swiper-slide page">
-            <p>222</p>
+            <div class="mould-top-pic" style="background-image: url('img/top1.png')"></div>
+            <div class="mould-bottom-text"><img src="img/text1.png"></div>
         </div>
-        <!-- 第3页 -->
+
+        <!-- 第2页 -->
         <div class="swiper-slide page">
+            <div class="mould-title2"><img src="img/a1.png"></div>
             <!--左右切换照片-->
-            <div class="swiper-container banner" style="height: 73%;">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide" style="text-align: center;">
-                        <img width="73%" height="93%"
-                             src="https://bpic.588ku.com/illus_pic/19/01/08/c72fe6816ddc6a218bec7f872aa50e92.jpg">
-                    </div>
-                    <div class="swiper-slide" style="text-align: center;">
-                        <img width="73%" height="93%"
-                             src="https://bpic.588ku.com/back_pic/05/56/49/255b1cc39fa3f8e.jpg">
-                    </div>
+            <div class="swiper-container banner mould-banner2">
+                <div class="swiper-wrapper ">
+                    <div class="swiper-slide" style="background-image: url('img/a2.png')"></div>
+                    <div class="swiper-slide" style="background-image: url('img/a4.png')"></div>
                 </div>
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-prev"></div><!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
                 <div class="swiper-button-next"></div><!--右箭头。如果放置在swiper-container外面，需要自定义样式。-->
             </div>
-            <p>需要自定义样式需要自定义样式需要自定义样式需要自定义样式需要自定义样式需要自定义样式需要自定义样式需要自定义样式需要自定义样式需要自定义样式需要自定义样式</p>
+            <div class="mould-bottom-tag2"><img src="img/a3.png"></div>
+        </div>
+
+        <!-- 第一页    -->
+        <div class="swiper-slide page">
+           <div class="mould-img3">
+               <img src="img/pic1.png" alt="">
+           </div>
+        </div>
+
+        <!-- 第一页    -->
+        <div class="swiper-slide page">
+            <div class="mould-img3">
+                <img src="img/pic2.png" alt="">
+            </div>
         </div>
         <!-- 第一页    -->
         <div class="swiper-slide page">
-            <p>444</p>
+            <div class="mould-img3">
+                <img src="img/pic3.png" alt="">
+            </div>
         </div>
         <!-- 第一页    -->
         <div class="swiper-slide page">
-            <p>555</p>
-        </div>
-        <!-- 第一页    -->
-        <div class="swiper-slide page">
-            <p>666</p>
-        </div>
-        <!-- 第一页    -->
-        <div class="swiper-slide page">
-            <p>77</p>
+            <div class="mould-img4" style="background-image: url('img/pic4.png')">
+                <img src="" alt="">
+            </div>
         </div>
         <!-- 第一页    -->
         <div class="swiper-slide page">
@@ -154,20 +193,15 @@
                 }else {
                     $(".glyphicon-menu-down").show()
                 }
-                initDOM();
+               // initDOM();
             },
             init: function(){
-                initDOM();
+                //initDOM();
             }
         },
 
     });
-
-
-
-
-
-
+    initDOM();
 
 
     function initDOM(){
