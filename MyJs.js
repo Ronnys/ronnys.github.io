@@ -191,24 +191,6 @@ function setVideo(id,url) {
                             "y": 7
                         },
                         {
-                            "name": "fullScreenButton",
-                            "align": "tr",
-                            "x": 10,
-                            "y": 12
-                        },
-                        {
-                            "name": "subtitle",
-                            "align": "tr",
-                            "x": 15,
-                            "y": 12
-                        },
-                        {
-                            "name": "setting",
-                            "align": "tr",
-                            "x": 15,
-                            "y": 12
-                        },
-                        {
                             "name": "volume",
                             "align": "tr",
                             "x": 5,
