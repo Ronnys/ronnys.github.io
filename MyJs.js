@@ -10,7 +10,7 @@ var mySwiper = new Swiper('#page-content',{
             var htmls=$($("#htmls").html()).clone()
             htmls.find('.swiper-slide.page').each(function () {
                 slides.push($(this).html())
-            })
+            });
 
             return slides;
         }()),
@@ -18,6 +18,7 @@ var mySwiper = new Swiper('#page-content',{
     direction : 'vertical',
     lazy: {
         loadPrevNext: true,
+        loadPrevNextAmount: 2,
     },
     on: {
         slideChangeTransitionEnd: function(){
