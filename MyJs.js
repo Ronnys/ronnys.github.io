@@ -22,7 +22,7 @@ var mySwiper = new Swiper('#page-content',{
     },
     on: {
         slideChangeTransitionEnd: function(){
-            console.log(count,this.activeIndex)
+            console.log(count,this.activeIndex);
             if(count==this.activeIndex+1){
                 $(".arrow-down").hide()
             }else {
