@@ -567,24 +567,23 @@
 <script type="text/javascript" charset="utf-8"  src="https://g.alicdn.com/de/prismplayer/2.8.2/aliplayer-min.js"></script>
 <script type="text/javascript" src="MyJs.js"></script>
 <script type="text/javascript">
-    var  imgs=[
-        'img/page3/p3_img.png',
-        'img/page4/p4_img.png',
-        'img/page4/p4_text.png',
-        'img/page4/p4_top.png',
-        'img/page5/p5_img_1.png',
-        'img/page5/p5_img_2.png',
-        'img/page5/p5_text.png',
-        'img/page5/p5_top.png',
-        'img/page6/p6_img.png',
-        'img/page6/p6_text.png',
-        'img/page7/p7_img_1.png',
-        'img/page7/p7_img_2.png',
-        'img/page7/p7_text.png',
-        'img/page7/p7_top.png',
-        'img/page8/p8_img.png',
-        'img/page8/p8_text.png',
-    ];
+    var $htmls=$($("#htmls").html()).clone()
+    var  imgs=[];
+    $htmls.find('.swiper-lazy').each(function () {
+        var src=$(this).css('background-image')
+        if(src){
+            imgs.push(src.split("\"")[1])
+        }
+    })
+
+    $htmls.find('img').each(function () {
+        var src=$(this).attr("src")
+        if(src){
+            imgs.push(src)
+        }
+    })
+    console.log(imgs)
+
     window.onload=function () {
         imgLoad()
     }
